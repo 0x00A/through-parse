@@ -15,6 +15,11 @@ s.pipe(parse()).pipe(through(function(obj) {
 }))
 
 t.pipe(parse()).pipe(through(function(obj) {
+	l('The data was parsed from a json stream and the parse method didnt cause a problem.')
+	assert(obj.test == true)
+}))
+
+t.pipe(through(function(obj) {
 	l('The data was parsed from a json stream.')
 	assert(obj.test == true)
 }))
