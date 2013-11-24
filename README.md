@@ -1,5 +1,5 @@
 # SYNOPSIS
-Breaks out `parse()` from event stream, emits errors instead of `console.error()`.
+Breaks out `parse()` from event stream, emits errors instead of `console.error()`. If you are intending on parsing JSON that comes from an unknown source, you should use [`JSONParse`](https://github.com/dominictarr/JSONStream).
 
 # USAGE
 ```js
